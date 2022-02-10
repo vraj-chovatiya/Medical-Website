@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Medical Website</title>
+  </head>
+  <body>
+    <section class="navigation-bar">
+      <nav>
+        <div class="navbar">
+          <div class="logo">
+            <img src="./images/logo.png" alt="Medical Logo" />
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="#home" class="btn active">HOME</a></li>
+              <li><a href="#virus" class="btn">VIRUS</a></li>
+              <li><a href="#contact" class="btn">CONTACT US</a></li>
+              <li><a href="#about" class="btn">ABOUT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section id="home">
+      <div class="content">
+        <div class="background-img">
+          <!-- <img src="./images/bg-2" alt="" /> -->
+        </div>
+      </div>
+      <div class="content-2">
+        <div class="content-left">
+          <img src="./images/bg-up.webp" alt="" />
+        </div>
+        <div class="content-right">
+          <div class="text">
+            <h1>Medical Store</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, iusto nostrum nobis culpa nulla autem dicta
+              repudiandae officia cupiditate sapiente, molestiae quam et,
+              incidunt vero commodi quibusdam inventore assumenda eveniet.
+            </p>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="varient" id="virus">
+      <div class="text">
+        <h1>Virus</h1>
+      </div>
+      <div class="boxes">
+        <div class="box1">
+          <img src="./images/corona.jpg" alt="" />
+          <h1>Corona Virus</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+            tempora aperiam accusantium cumque ipsam fugiat molestias vero nihil
+            ducimus asperiores!
+          </p>
+          <a href="">Learn More</a>
+        </div>
+        <div class="box2">
+          <img src="./images/delta.jpg" alt="" />
+          <h1>Delta Varient</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+            tempora aperiam accusantium cumque ipsam fugiat molestias vero nihil
+            ducimus asperiores!
+          </p>
+          <a href="">Learn More</a>
+        </div>
+        <div class="box3">
+          <img src="./images/omicron.jpg" alt="" />
+          <h1>Omicron Virus</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+            tempora aperiam accusantium cumque ipsam fugiat molestias vero nihil
+            ducimus asperiores!
+          </p>
+          <a href="">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="contact">
+      <h1>Contact Us</h1>
+      <div class="contact-row">
+        <div class="contact-left">
+          <img src="./images/photo2.webp" alt="">
+        </div>
+        <div class="contact-right">
+          <table>
+            <form action="" class="form1">
+              <tr class="r1">
+                <td><label for="">First Name: </label></td>
+                <td><input type="text" id="name"></td>
+              </tr>
+              <tr class="r2">
+                <td><label for="">Email Name: </label></td>
+                <td><input type="email" id="email"></td>
+              </tr>
+              <tr class="r3">
+                <td><label for="">Mobile Number: </label></td>
+                <td><input type="number" id="mobile number"></td>
+              </tr>
+              
+            </form>
+            
+          </table>
+          <label for="city">Select City: </label>
+          <select name="city" id="city">
+            <option value="surat">Surat</option>
+            <option value="ahemdabad">Ahemdabad</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="vadodara">Vadodara</option>
+            <option value="vapi">Vapi</option>
+          </select><br>
+          <input type="submit" value="submit">
+        </div>
+      </div>
+    </section> -->
+
+    <section id="contact" id="contact">
+      <form name="contact" class="contact-menu" netlify>
+        <div class="form-container">
+          <h2>Contact Us</h2>
+          <input type="text" name="" id="" placeholder=" Name" />
+          <input type="email" name="" id="" placeholder=" E-Mail" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder=" type you message here"
+          ></textarea>
+        </div>
+        <a href="" class="hero-btn btn">Submit</a>
+      </form>
+    </section>
+
+    <section class="footer" id="about">
+      <h2>About Us</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore illum
+        in vitae rem aperiam,<br />
+        cupiditate numquam laboriosam magni omnis quisquam alias iusto ipsum
+        vero tenetur?
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>
+        Made With <i class="fa fa-heart-o"></i> <i class="fa fa-star"></i> Vraj
+        Chovatiya
+      </p>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   
+
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              700,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </body>
+</html>
